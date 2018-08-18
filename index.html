@@ -12,7 +12,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
 </head>
 <body>
-     <section>
+      <div id="main">  
+    <section>
             <div id="overlay">
                     <div id="progstat"></div>
                     <div id="progress"></div>
@@ -22,7 +23,6 @@
                    
                   </div>
     </section>
-    
     <section>
         <div class="header">
             
@@ -32,8 +32,18 @@
                         <div class="logo">
                         <span>Tanatos <span class="main-color">Studio</span></span>
                      </div>
-                        <span class="nav-r">Menu
-                        <i class="fa fa-bars fa-lg"></i></span>
+                        
+                            <span class="nav-r">Menu
+                            <i class="fa fa-bars fa-lg" onclick="openNav()"></i></span>
+                        
+                    </div>
+                    <div id="mySidenav" class="sidenav">
+                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                      <a class="hv-link" href="#">About</a>
+                      <a class="hv-link" href="#">Services</a>
+                      <a class="hv-link" href="#">Clients</a>
+                        <a class="hv-link" href="#">Team</a>
+                      <a class="hv-link" href="#">Contact</a>
                     </div>
                 <div class="table-row">
                  <div class="intro text-center">
@@ -47,8 +57,9 @@
                     </div>
                 </div>
                 </div>
+                            <span class="arrow"><i id="ch-down" class="fa fa-chevron-down"></i></span>
                 </div>
-                <span class="arrow"><i class="fa fa-chevron-down"></i></span>
+                
             </div>
         </div>
     </section> 
@@ -354,6 +365,7 @@
                      </div>
                 </footer>
             </section>
+          </div>
             <!-- -------------------------------- ---------------------------------------------------------- -->
             
     
