@@ -42,7 +42,58 @@ body{
 .hidden{
     display: none;
 }
-/*-----------------------------------------*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-left: 1px solid #f7600f;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: monospace;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav .cl-hv{
+    color: #f7600f;
+    margin-top: 20px;
+    
+}
+.sidenav  .hv-link{
+
+    margin-bottom: 20px;
+    font-size: 20px;
+    border-top: 30px;
+/*    border-bottom: 1px solid #f76;*/
+}
+.sidenav  .hv-link:hover {
+    color: #f1f1f1;
+    background-color:  #f7600f;
+    font-size: 25px;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #f7600f;
+}
+.sidenav .closebtn:hover{
+    color: #f1f1f1
+}
 /*-------------------SPINNER----------------------*/
 #overlay{
     position:fixed;
@@ -625,7 +676,7 @@ overflow: hidden;
 
 }
 .testimonials img{
-    margin-top: 30px;;
+    margin-top: 30px;
     width: 120px;
     height: 120px;
     line-height: 120px;
