@@ -1,3 +1,17 @@
+/*jslint browser: true*/
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginRight = "250px";
+    document.getElemenById("ch-down").style.marginLeft = "-27%";
+    
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginRight= "0";
+    document.getElemenById("ch-down").style.marginLeft = "0";
+}
+/*global $, jQuery, alert*/
 (function(){
   function id(v){ return document.getElementById(v); }
   function loadbar() {
@@ -31,8 +45,6 @@
   }
   document.addEventListener('DOMContentLoaded', loadbar, false);
 }());
-/*jslint browser: true*/
-/*global $, jQuery, alert*/
 
 $(function () {
     
